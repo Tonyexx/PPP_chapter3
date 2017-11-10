@@ -1,0 +1,21 @@
+// Hello,World!.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include<iostream>
+#include<string>
+#include<vector>
+#include<algorithm>
+#include<cmath>
+using namespace std;
+inline void keep_window_open() { char ch; cin >> ch; }
+
+int main() //C++ programs start by executing the function main
+{
+	string first_name;
+	double age_in_year;
+	cin >> age_in_year >> first_name;
+	cout << "Hello,"<<first_name<<"(age "<<age_in_year*12<<" monthes)\n";	//output"Hello, World!"
+	keep_window_open();		    //wait for a charater to be entered
+	return 0;
+
+}
