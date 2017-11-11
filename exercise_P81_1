@@ -1,0 +1,23 @@
+// Exercise.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "stdafx.h"
+#include<iostream>
+#include<string>
+#include<vector>
+#include<algorithm>
+#include<cmath>
+using namespace std;
+inline void keep_window_open() { char ch; cin >> ch; }
+
+
+int main()
+{
+	cout << "Please enter the miles you want to convert ";
+	double miles = 0;
+	cin >> miles;
+	cout << miles << " miles is " << 1.609*miles << " kilometers.\n";
+	keep_window_open();
+    return 0;
+}
