@@ -1,0 +1,58 @@
+// ConsoleApplication1.cpp : Defines the entry point for the console application.
+//
+// Exercise.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include<iostream>
+#include<string>
+#include<vector>
+#include<algorithm>
+#include<cmath>
+using namespace std;
+inline void keep_window_open() { char ch; cin >> ch; }
+
+
+int main()
+{
+	cout << "Please enter two integer values\n";
+	int val1, val2;
+	cin >> val1 >> val2;
+	if ((val1 < val2)&(val1 != val2))
+		{
+			cout << "the smaller is " << val1 << "\n";
+			cout << "the larger is " << val2 << "\n";
+		}
+	else
+	    {
+		    cout << "the smaller is " << val2 << "\n";
+		    cout << "the larger is " << val2 << "\n";
+	    }		
+	if (val1 == val2)
+			cout << "they are equal";
+	cout << "sum=" << val1 + val2 << "\n"
+		 << "difference=" << val1 - val2 << "\n"
+		 << "product=" << val1*val2 << "\n"
+		 << "ratio=" << val1 / val2 << "\n";
+	cout << "\nWhen they are converted into float-point values.\n";
+	double d_val1 = val1;
+	double d_val2 = val2;
+	double ratio;
+	ratio = d_val1 / d_val2;
+	if ((val1 < val2)&(val1 != val2))
+	{
+		cout << "the smaller is " << val1 << "\n";
+		cout << "the larger is " << val2 << "\n";
+	}
+	else
+	{
+		cout << "the smaller is " << val2 << "\n";
+		cout << "the larger is " << val2 << "\n";
+	}
+	if (val1 == val2)
+		cout << "they are equal";
+	cout << "sum=" << d_val1 + d_val2 << "\n"
+		<< "difference=" << d_val1 - d_val2 << "\n"
+		<< "product=" << d_val1*d_val2 << "\n"
+		<< "ratio=" << d_val1 / d_val2 << "\n";
+	keep_window_open();		
+}
