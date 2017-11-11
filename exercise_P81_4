@@ -1,0 +1,31 @@
+#include "stdafx.h"
+#include<iostream>
+#include<string>
+#include<vector>
+#include<algorithm>
+#include<cmath>
+using namespace std;
+inline void keep_window_open() { char ch; cin >> ch; }
+
+
+int main()
+{
+	cout << "Please enter two integer values";
+	int val1, val2;
+	cin >> val1 >> val2;
+	if ((val1 < val2)&(val1 != val2))
+		
+			cout << "the smaller is " << val1 << "\n";
+			cout << "the larger is " << val2 << "\n";
+		
+	else
+	
+		cout << "the smaller is " << val2 << "\n";
+		cout << "the larger is " << val2 << "\n";
+			
+	if (val1 = val2)
+		cout << "they are equal";
+
+	double d_val1 = val1;
+	double d_val2 = val2;
+}
