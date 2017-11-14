@@ -1,0 +1,70 @@
+// exercise_7.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "stdafx.h"
+#include<iostream>
+#include<string>
+#include<vector>
+#include<algorithm>
+#include<cmath>
+	using namespace std;
+	inline void keep_window_open() { char ch; cin >> ch; }
+
+
+	int main()
+	{
+		//input the coins we have
+		cout << "Please enter the number of pennies you have:\n";
+		double penny = 0;
+		cin >> penny;
+		cout << "Please enter the number of nickels you have:\n";
+		double nickels = 0;
+		cin >> nickels;
+		cout << "Please enter the number of dimes you have:\n";
+		double dimes = 0;
+		cin >> dimes;
+		cout << "Please enter the number of quarters you have:\n";
+		double quarters = 0;
+		cin >> quarters;
+		cout << "Please enter the number of half dollars you have:\n";
+		double hal_dollars = 0;
+		cin >> hal_dollars;
+		cout << "Please enter the number of one-dollar coins you have:\n";
+		double dollars = 0;
+		cin >> dollars;
+		
+		//print out the coins we have on the screen
+		if ((penny != 1) & (penny != 0))
+			cout << "You have " << penny << " pennies" << "\n";
+		else
+			cout << "You have " << penny << " penny" << "\n";
+		if ((nickels != 1) & (nickels != 0))
+			cout << "You have " << nickels << "nickels" << "\n";
+		else
+			cout << "You have " << nickels << " nickel" << "\n";
+		if ((dimes != 1) & (dimes != 0))
+			cout << "You have " << dimes << " dimes" << "\n";
+		else
+			cout << "You have " << dimes << " dime" << "\n";
+		if ((quarters != 1) & (quarters != 0))
+			cout << "You have " << quarters << " quarters" << "\n";
+		else
+			cout << "You have " << quarters << " quarter" << "\n";
+		if ((hal_dollars != 1) & (hal_dollars != 0))
+			cout << "You have " << hal_dollars << " half dollars" << "\n";
+		else
+			cout << "You have " << hal_dollars << " half dollar" << "\n";
+		if ((dollars != 1) & (dollars != 0))
+			cout << "You have " << dollars << " dollars" << "\n";
+		else
+			cout << "You have " << dollars << " dollar" << "\n";
+
+		//calcualte the total value
+		double tot_val = 0;
+		tot_val = (0.01 * penny + 0.05 *nickels +0.10 * dimes + 0.25 * quarters + 0.5 * hal_dollars + dollars);
+		cout <<"The value of all of your coins is $" << tot_val <<endl;
+			
+		keep_window_open();
+	}
+
