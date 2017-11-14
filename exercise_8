@@ -1,0 +1,26 @@
+// exercise_7.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "stdafx.h"
+#include<iostream>
+#include<string>
+#include<vector>
+#include<algorithm>
+#include<cmath>
+	using namespace std;
+	inline void keep_window_open() { char ch; cin >> ch; }
+
+
+	int main()
+	{
+		cout << "Please enter one integar values\n";
+		int val1,val_modulo;
+		cin >> val1;
+		val_modulo = val1 % 2;
+		if (val_modulo == 0)
+			cout << "The value " << val1 << " is an even number\n";
+		else
+			cout << "The value " << val1 << " is an odd number\n";
+		keep_window_open();
+	}
