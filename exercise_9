@@ -1,0 +1,36 @@
+// exercise_7.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "stdafx.h"
+#include<iostream>
+#include<string>
+#include<vector>
+#include<algorithm>
+#include<cmath>
+	using namespace std;
+	inline void keep_window_open() { char ch; cin >> ch; }
+
+
+	int main()
+	{
+	    cout << "Please enter a number:\n";
+		string num_in="ss";
+		cin >> num_in;		
+		if (num_in =="zero")
+			cout << "0";
+		else if (num_in == "one")
+			cout << "1";
+		else if (num_in == "two")
+			cout << "2";
+		else if (num_in == "three")
+		    cout << "3";
+		else if (num_in == "four")
+			cout << "4";
+		else
+		{
+			cout << "Not a number I know";
+		}
+		keep_window_open();
+	}
+
